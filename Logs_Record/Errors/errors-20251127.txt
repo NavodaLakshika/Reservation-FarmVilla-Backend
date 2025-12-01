@@ -1,0 +1,39 @@
+2025-11-27 09:53:13 [ERR] Error saving reservation for customer: 
+System.Exception: Database error occurred while saving reservation: Cannot insert the value NULL into column 'Mobile', table 'SV_Reservation.dbo.Reservation_Hed'; column does not allow nulls. INSERT fails.
+?? INSERT MODE: R0000064
+?? Payment Count: 0
+?? Calculated Paid Amount: 0.00
+?? Calculated Due Amount: 0.00
+?? Gross Amount: 0.00
+?? No Invoice Generated - Status: Booked
+??? ERROR OCCURRED ???
+Error: Cannot insert the value NULL into column 'Mobile', table 'SV_Reservation.dbo.Reservation_Hed'; column does not allow nulls. INSERT fails.
+Line: 132
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in D:\Navoda\Projects\backend\Services\RoomReservationService.cs:line 316
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto) in D:\Navoda\Projects\backend\Controllers\RoomReservationController.cs:line 51
+2025-11-27 12:55:09 [ERR] Error saving reservation for customer: 
+System.Exception: Database error occurred while saving reservation: Cannot insert the value NULL into column 'Mobile', table 'SV_Reservation.dbo.Reservation_Hed'; column does not allow nulls. INSERT fails.
+?? INSERT MODE: R0000074
+?? Payment Count: 0
+?? Calculated Paid Amount: 0.00
+?? Calculated Due Amount: 0.00
+?? Gross Amount: 0.00
+?? No Invoice Generated - Status: Booked
+??? ERROR OCCURRED ???
+Error: Cannot insert the value NULL into column 'Mobile', table 'SV_Reservation.dbo.Reservation_Hed'; column does not allow nulls. INSERT fails.
+Line: 132
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in D:\Navoda\Projects\backend\Services\RoomReservationService.cs:line 316
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto) in D:\Navoda\Projects\backend\Controllers\RoomReservationController.cs:line 51
+2025-11-27 12:55:54 [ERR] Error saving reservation for customer: 
+System.Exception: Database error occurred while saving reservation: Cannot insert the value NULL into column 'Mobile', table 'SV_Reservation.dbo.Reservation_Hed'; column does not allow nulls. INSERT fails.
+?? INSERT MODE: R0000074
+?? Payment Count: 0
+?? Calculated Paid Amount: 0.00
+?? Calculated Due Amount: 0.00
+?? Gross Amount: 0.00
+?? No Invoice Generated - Status: Booked
+??? ERROR OCCURRED ???
+Error: Cannot insert the value NULL into column 'Mobile', table 'SV_Reservation.dbo.Reservation_Hed'; column does not allow nulls. INSERT fails.
+Line: 132
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in D:\Navoda\Projects\backend\Services\RoomReservationService.cs:line 316
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto) in D:\Navoda\Projects\backend\Controllers\RoomReservationController.cs:line 51

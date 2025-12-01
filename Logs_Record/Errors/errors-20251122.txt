@@ -1,0 +1,41 @@
+2025-11-22 09:05:18 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation: Cannot insert the value NULL into column 'InvoiceNo', table 'SV_Reservation.dbo.Reservation_Hed'; column does not allow nulls. INSERT fails.
+? ERROR: Cannot insert the value NULL into column 'InvoiceNo', table 'SV_Reservation.dbo.Reservation_Hed'; column does not allow nulls. INSERT fails.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in D:\Navoda\Projects\backend\Services\RoomReservationService.cs:line 308
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto) in D:\Navoda\Projects\backend\Controllers\RoomReservationController.cs:line 51
+2025-11-22 09:08:47 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation: Cannot insert the value NULL into column 'InvoiceNo', table 'SV_Reservation.dbo.Reservation_Hed'; column does not allow nulls. INSERT fails.
+?? Total Payments: 1
+?? Calculated Paid Amount: 9000.00
+?? Calculated Due Amount: 30000.00
+?? INSERT MODE: R00000000012
+?? No Invoice Generated - Status: Booked
+??? ERROR OCCURRED ???
+Error: Cannot insert the value NULL into column 'InvoiceNo', table 'SV_Reservation.dbo.Reservation_Hed'; column does not allow nulls. INSERT fails.
+Line: 123
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in D:\Navoda\Projects\backend\Services\RoomReservationService.cs:line 308
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto) in D:\Navoda\Projects\backend\Controllers\RoomReservationController.cs:line 51
+2025-11-22 09:18:15 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation: Cannot insert the value NULL into column 'InvoiceNo', table 'SV_Reservation.dbo.Reservation_Hed'; column does not allow nulls. INSERT fails.
+?? Total Payments: 1
+?? Calculated Paid Amount: 9000.00
+?? Calculated Due Amount: 30000.00
+?? INSERT MODE: R00000000012
+?? No Invoice Generated - Status: Booked
+??? ERROR OCCURRED ???
+Error: Cannot insert the value NULL into column 'InvoiceNo', table 'SV_Reservation.dbo.Reservation_Hed'; column does not allow nulls. INSERT fails.
+Line: 123
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in D:\Navoda\Projects\backend\Services\RoomReservationService.cs:line 308
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto) in D:\Navoda\Projects\backend\Controllers\RoomReservationController.cs:line 49
+2025-11-22 09:18:28 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation: Cannot insert the value NULL into column 'InvoiceNo', table 'SV_Reservation.dbo.Reservation_Hed'; column does not allow nulls. INSERT fails.
+?? Total Payments: 1
+?? Calculated Paid Amount: 9000.00
+?? Calculated Due Amount: 30000.00
+?? INSERT MODE: R00000000012
+?? No Invoice Generated - Status: Booked
+??? ERROR OCCURRED ???
+Error: Cannot insert the value NULL into column 'InvoiceNo', table 'SV_Reservation.dbo.Reservation_Hed'; column does not allow nulls. INSERT fails.
+Line: 123
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in D:\Navoda\Projects\backend\Services\RoomReservationService.cs:line 308
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto) in D:\Navoda\Projects\backend\Controllers\RoomReservationController.cs:line 49

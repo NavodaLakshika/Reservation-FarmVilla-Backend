@@ -1,0 +1,4 @@
+2025-09-13 10:32:17 [ERR] Error saving reservation for customer: 
+System.Exception: An error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in G:\Thamalpath\onimta-web-reservation-system\backend\Services\RoomReservationService.cs:line 289
+   at RoomReservationController.SaveReservation(ReservationDto reservation) in G:\Thamalpath\onimta-web-reservation-system\backend\Controllers\RoomReservationController.cs:line 31

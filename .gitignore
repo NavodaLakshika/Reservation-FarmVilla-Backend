@@ -25,3 +25,4 @@ _ReSharper*/
 *.publishproj
 /Properties/launchSettings.json
 Logs_Record/
+/OIT_Reservation.sln

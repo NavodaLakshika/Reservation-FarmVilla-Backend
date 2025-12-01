@@ -1,0 +1,4 @@
+2025-11-14 13:59:00 [ERR] Error saving reservation for customer: 
+System.Exception: An error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in D:\Navoda\Projects\backend\Services\RoomReservationService.cs:line 289
+   at RoomReservationController.SaveReservation(ReservationDto reservation) in D:\Navoda\Projects\backend\Controllers\RoomReservationController.cs:line 34

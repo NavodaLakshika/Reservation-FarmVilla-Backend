@@ -1,0 +1,21 @@
+2025-11-24 11:26:05 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation: Procedure or function 'sp_reservation_save' expects parameter '@ReceiptNumbers', which was not supplied.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-24 11:53:41 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation: Procedure or function sp_reservation_save has too many arguments specified.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-24 15:58:23 [ERR] Error saving reservation for customer: 
+System.Exception: Database error occurred while saving reservation: Cannot insert the value NULL into column 'Mobile', table 'SV_Reservation.dbo.Reservation_Hed'; column does not allow nulls. INSERT fails.
+?? INSERT MODE: R00000000007
+?? Payment Count: 1
+?? Calculated Paid Amount: 123.00
+?? Calculated Due Amount: 38877.00
+?? Gross Amount: 39000.00
+?? No Invoice Generated - Status: Booked
+??? ERROR OCCURRED ???
+Error: Cannot insert the value NULL into column 'Mobile', table 'SV_Reservation.dbo.Reservation_Hed'; column does not allow nulls. INSERT fails.
+Line: 132
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in D:\Navoda\Projects\backend\Services\RoomReservationService.cs:line 316
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto) in D:\Navoda\Projects\backend\Controllers\RoomReservationController.cs:line 51

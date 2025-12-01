@@ -1,0 +1,40 @@
+2025-11-04 08:59:44 [ERR] Error saving reservation for customer: 
+System.Exception: An error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservation)
+2025-11-04 09:14:52 [ERR] Error saving reservation for customer: 
+System.Exception: An error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservation)
+2025-11-04 09:16:51 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservation)
+2025-11-04 09:17:01 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservation)
+2025-11-04 09:17:16 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservation)
+2025-11-04 09:17:52 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservation)
+2025-11-04 09:18:04 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservation)
+2025-11-04 09:18:14 [ERR] Error saving reservation for customer: 
+System.Exception: An error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservation)
+2025-11-04 09:18:27 [ERR] Error saving reservation for customer: 
+System.Exception: An error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservation)
+2025-11-04 10:55:03 [ERR] Error saving reservation for customer: 
+System.Exception: An error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in D:\Navoda\Projects\backend\Services\RoomReservationService.cs:line 289
+   at RoomReservationController.SaveReservation(ReservationDto reservation) in D:\Navoda\Projects\backend\Controllers\RoomReservationController.cs:line 34

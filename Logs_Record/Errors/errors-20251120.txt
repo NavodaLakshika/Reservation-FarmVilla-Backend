@@ -1,0 +1,194 @@
+2025-11-20 09:33:50 [ERR] Error saving reservation for customer: G000008
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservation)
+2025-11-20 10:45:53 [ERR] Error fetching reservations by status 1
+System.FormatException: String 'Tue Nov 04 2025 00:00:00 GMT+0530 (India Standard Time)' was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(ReadOnlySpan`1 s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s)
+   at RoomReservationService.GetByStatusAsync(Int32 statusId, String fromDate, String toDate) in D:\Navoda\Projects\backend\Services\RoomReservationService.cs:line 508
+   at RoomReservationController.GetByStatus(Int32 statusId, String fromDate, String toDate) in D:\Navoda\Projects\backend\Controllers\RoomReservationController.cs:line 95
+2025-11-20 11:10:18 [ERR] Error saving reservation for customer: G000002
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in D:\Navoda\Projects\backend\Services\RoomReservationService.cs:line 290
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto) in D:\Navoda\Projects\backend\Controllers\RoomReservationController.cs:line 50
+2025-11-20 11:34:36 [ERR] Error saving reservation for customer: G000002
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in D:\Navoda\Projects\backend\Services\RoomReservationService.cs:line 290
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto) in D:\Navoda\Projects\backend\Controllers\RoomReservationController.cs:line 50
+2025-11-20 11:34:43 [ERR] Error saving reservation for customer: G000002
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in D:\Navoda\Projects\backend\Services\RoomReservationService.cs:line 290
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto) in D:\Navoda\Projects\backend\Controllers\RoomReservationController.cs:line 50
+2025-11-20 11:34:55 [ERR] Error saving reservation for customer: G000002
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in D:\Navoda\Projects\backend\Services\RoomReservationService.cs:line 290
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto) in D:\Navoda\Projects\backend\Controllers\RoomReservationController.cs:line 50
+2025-11-20 11:38:46 [ERR] Error saving reservation for customer: G000002
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 11:40:30 [ERR] Error saving reservation for customer: G000002
+System.Exception: Database error: The MERGE statement attempted to UPDATE or DELETE the same row more than once. This happens when a target row matches more than one source row. A MERGE statement cannot UPDATE/DELETE the same row of the target table multiple times. Refine the ON clause to ensure a target row matches at most one source row, or use the GROUP BY clause to group the source rows. (Error Number: 50000)
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 11:40:54 [ERR] Error saving reservation for customer: G000002
+System.Exception: Database error: The MERGE statement attempted to UPDATE or DELETE the same row more than once. This happens when a target row matches more than one source row. A MERGE statement cannot UPDATE/DELETE the same row of the target table multiple times. Refine the ON clause to ensure a target row matches at most one source row, or use the GROUP BY clause to group the source rows. (Error Number: 50000)
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 14:00:54 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 14:01:32 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 14:10:20 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 14:14:34 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation: Conversion failed when converting the varchar value 'T-001' to data type int.
+=== STARTING SP EXECUTION ===
+UPDATE existing reservation: R00000000002
+Processed room details
+Processed service details
+ERROR: Conversion failed when converting the varchar value 'T-001' to data type int.
+Error Line: 202
+Error Procedure: sp_reservation_save
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 14:17:23 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation: Conversion failed when converting the varchar value 'T-001' to data type int.
+=== STARTING SP EXECUTION ===
+UPDATE existing reservation: R00000000002
+Processed room details
+Processed service details
+ERROR: Conversion failed when converting the varchar value 'T-001' to data type int.
+Error Line: 202
+Error Procedure: sp_reservation_save
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 15:02:29 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation: Procedure or function sp_reservation_save has too many arguments specified.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 15:02:57 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation: Procedure or function sp_reservation_save has too many arguments specified.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 15:03:23 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 15:03:29 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 15:06:18 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 15:06:54 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 15:07:11 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 15:07:28 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 15:07:44 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 15:10:27 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 15:15:56 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 15:16:02 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 15:32:32 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 15:32:45 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 15:32:51 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 15:33:55 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 17:34:48 [ERR] Error fetching reservations by status 1
+Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '@resNos'.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at RoomReservationService.GetByStatusAsync(Int32 statusId, String fromDate, String toDate)
+   at RoomReservationController.GetByStatus(Int32 statusId, String fromDate, String toDate)
+ClientConnectionId:1d07b2ce-8de9-47ef-af62-d94b11e2e3a2
+Error Number:102,State:1,Class:15
+2025-11-20 17:35:08 [ERR] Error fetching reservations by status 1
+Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '@resNos'.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at RoomReservationService.GetByStatusAsync(Int32 statusId, String fromDate, String toDate)
+   at RoomReservationController.GetByStatus(Int32 statusId, String fromDate, String toDate)
+ClientConnectionId:1d07b2ce-8de9-47ef-af62-d94b11e2e3a2
+Error Number:102,State:1,Class:15
+2025-11-20 17:37:41 [ERR] Error fetching reservations by status 1
+System.InvalidOperationException: There is already an open DataReader associated with this Connection which must be closed first.
+   at Microsoft.Data.SqlClient.SqlCommand.ValidateCommand(Boolean isAsync, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.BeginExecuteReaderInternal(CommandBehavior behavior, AsyncCallback callback, Object stateObject, Int32 timeout, Boolean inRetry, Boolean asyncWrite)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at RoomReservationService.GetByStatusAsync(Int32 statusId, String fromDate, String toDate)
+   at RoomReservationController.GetByStatus(Int32 statusId, String fromDate, String toDate)
+2025-11-20 17:38:28 [ERR] Error fetching reservations by status 1
+System.InvalidOperationException: There is already an open DataReader associated with this Connection which must be closed first.
+   at Microsoft.Data.SqlClient.SqlCommand.ValidateCommand(Boolean isAsync, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.BeginExecuteReaderInternal(CommandBehavior behavior, AsyncCallback callback, Object stateObject, Int32 timeout, Boolean inRetry, Boolean asyncWrite)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at RoomReservationService.GetByStatusAsync(Int32 statusId, String fromDate, String toDate)
+   at RoomReservationController.GetByStatus(Int32 statusId, String fromDate, String toDate)
+2025-11-20 17:55:05 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)
+2025-11-20 17:55:19 [ERR] Error saving reservation for customer: G000001
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto)
+   at RoomReservationController.SaveReservation(ReservationDto reservationDto)

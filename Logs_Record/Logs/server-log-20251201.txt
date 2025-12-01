@@ -1,0 +1,56 @@
+2025-12-01 10:00:14 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-12-01 10:00:14 [DBG] Hosting starting
+2025-12-01 10:00:14 [INF] User profile is available. Using 'C:\Users\Onimta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-01 10:00:14 [DBG] Reading data from file 'C:\Users\Onimta\AppData\Local\ASP.NET\DataProtection-Keys\key-5b5b8e65-5f3e-4c1a-a6e0-5288f749d340.xml'.
+2025-12-01 10:00:14 [DBG] Found key {5b5b8e65-5f3e-4c1a-a6e0-5288f749d340}.
+2025-12-01 10:00:14 [DBG] Considering key {5b5b8e65-5f3e-4c1a-a6e0-5288f749d340} with expiration date 2026-01-21 06:33:18Z as default key.
+2025-12-01 10:00:14 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-12-01 10:00:14 [DBG] Decrypting secret element using Windows DPAPI.
+2025-12-01 10:00:14 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-12-01 10:00:14 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-12-01 10:00:14 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-12-01 10:00:14 [DBG] Using key {5b5b8e65-5f3e-4c1a-a6e0-5288f749d340} as the default key.
+2025-12-01 10:00:14 [DBG] Key ring with default key {5b5b8e65-5f3e-4c1a-a6e0-5288f749d340} was loaded during application startup.
+2025-12-01 10:00:14 [DBG] Middleware loaded
+2025-12-01 10:00:14 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16514 B).
+2025-12-01 10:00:14 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-12-01 10:00:14 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-12-01 10:00:15 [INF] Now listening on: https://localhost:9307
+2025-12-01 10:00:15 [INF] Now listening on: http://localhost:9308
+2025-12-01 10:00:15 [DBG] Loaded hosting startup assembly OIT_Reservation
+2025-12-01 10:00:15 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-12-01 10:00:15 [DBG] Connection id "0HNHGI99HSLFT" accepted.
+2025-12-01 10:00:15 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-12-01 10:00:15 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-12-01 10:00:15 [DBG] Connection id "0HNHGI99HSLFT" started.
+2025-12-01 10:00:15 [DBG] Connection id "0HNHGI99HSLFT" received FIN.
+2025-12-01 10:00:15 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-12-01 10:00:15 [DBG] Connection id "0HNHGI99HSLFT" stopped.
+2025-12-01 10:00:15 [DBG] Connection id "0HNHGI99HSLFT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-01 10:00:15 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-01 10:00:15 [INF] Hosting environment: Development
+2025-12-01 10:00:15 [INF] Content root path: D:\Navoda\Projects\backend
+2025-12-01 10:00:15 [DBG] Hosting started
+2025-12-01 10:00:20 [DBG] Connection id "0HNHGI99HSLFU" accepted.
+2025-12-01 10:00:20 [DBG] Connection id "0HNHGI99HSLFU" started.
+2025-12-01 10:00:20 [DBG] Connection 0HNHGI99HSLFU established using the following protocol: "Tls12"
+2025-12-01 10:00:20 [INF] Request starting HTTP/2 GET https://localhost:9307/index.html - null null
+2025-12-01 10:00:21 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-12-01 10:00:21 [DBG] The request path  does not match the path filter
+2025-12-01 10:00:21 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-12-01 10:00:21 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-12-01 10:00:22 [DBG] Response markup was updated to include Browser Link script injection.
+2025-12-01 10:00:22 [INF] Request starting HTTP/2 GET https://localhost:9307/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-01 10:00:22 [INF] Request starting HTTP/2 GET https://localhost:9307/_vs/browserLink - null null
+2025-12-01 10:00:22 [DBG] Response markup was updated to include browser refresh script injection.
+2025-12-01 10:00:22 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-12-01 10:00:22 [INF] Request finished HTTP/2 GET https://localhost:9307/_framework/aspnetcore-browser-refresh.js - 200 16514 application/javascript; charset=utf-8 168.1715ms
+2025-12-01 10:00:22 [INF] Request finished HTTP/2 GET https://localhost:9307/index.html - 200 null text/html;charset=utf-8 1628.8748ms
+2025-12-01 10:00:22 [INF] Request finished HTTP/2 GET https://localhost:9307/_vs/browserLink - 200 null text/javascript; charset=UTF-8 360.7168ms
+2025-12-01 10:00:22 [INF] Request starting HTTP/2 GET https://localhost:9307/swagger/v1/swagger.json - null null
+2025-12-01 10:00:23 [INF] Request finished HTTP/2 GET https://localhost:9307/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 369.5754ms

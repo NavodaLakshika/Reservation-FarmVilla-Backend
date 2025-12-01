@@ -1,0 +1,44 @@
+2025-09-02 09:15:30 [ERR] Error saving reservation for customer: G000020
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in G:\Thamalpath\onimta-web-reservation-system\backend\Services\RoomReservationService.cs:line 279
+   at RoomReservationController.SaveReservation(ReservationDto reservation) in G:\Thamalpath\onimta-web-reservation-system\backend\Controllers\RoomReservationController.cs:line 31
+2025-09-02 10:24:37 [ERR] Error saving reservation for customer: G000020
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in G:\Thamalpath\onimta-web-reservation-system\backend\Services\RoomReservationService.cs:line 279
+   at RoomReservationController.SaveReservation(ReservationDto reservation) in G:\Thamalpath\onimta-web-reservation-system\backend\Controllers\RoomReservationController.cs:line 31
+2025-09-02 10:26:27 [ERR] Error saving reservation for customer: G000020
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in G:\Thamalpath\onimta-web-reservation-system\backend\Services\RoomReservationService.cs:line 279
+   at RoomReservationController.SaveReservation(ReservationDto reservation) in G:\Thamalpath\onimta-web-reservation-system\backend\Controllers\RoomReservationController.cs:line 31
+2025-09-02 10:50:12 [ERR] Error saving reservation for customer: G000020
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in G:\Thamalpath\onimta-web-reservation-system\backend\Services\RoomReservationService.cs:line 276
+   at RoomReservationController.SaveReservation(ReservationDto reservation) in G:\Thamalpath\onimta-web-reservation-system\backend\Controllers\RoomReservationController.cs:line 31
+2025-09-02 10:53:52 [ERR] Error saving reservation for customer: G000020
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in G:\Thamalpath\onimta-web-reservation-system\backend\Services\RoomReservationService.cs:line 276
+   at RoomReservationController.SaveReservation(ReservationDto reservation) in G:\Thamalpath\onimta-web-reservation-system\backend\Controllers\RoomReservationController.cs:line 31
+2025-09-02 12:00:22 [ERR] Error saving reservation for customer: G000020
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in G:\Thamalpath\onimta-web-reservation-system\backend\Services\RoomReservationService.cs:line 279
+   at RoomReservationController.SaveReservation(ReservationDto reservation) in G:\Thamalpath\onimta-web-reservation-system\backend\Controllers\RoomReservationController.cs:line 31
+2025-09-02 12:02:53 [ERR] Error saving reservation for customer: G000020
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in G:\Thamalpath\onimta-web-reservation-system\backend\Services\RoomReservationService.cs:line 286
+   at RoomReservationController.SaveReservation(ReservationDto reservation) in G:\Thamalpath\onimta-web-reservation-system\backend\Controllers\RoomReservationController.cs:line 31
+2025-09-02 12:14:28 [ERR] Error saving reservation for customer: G000020
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in G:\Thamalpath\onimta-web-reservation-system\backend\Services\RoomReservationService.cs:line 279
+   at RoomReservationController.SaveReservation(ReservationDto reservation) in G:\Thamalpath\onimta-web-reservation-system\backend\Controllers\RoomReservationController.cs:line 31
+2025-09-02 12:16:39 [ERR] Error saving reservation for customer: G000020
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in G:\Thamalpath\onimta-web-reservation-system\backend\Services\RoomReservationService.cs:line 279
+   at RoomReservationController.SaveReservation(ReservationDto reservation) in G:\Thamalpath\onimta-web-reservation-system\backend\Controllers\RoomReservationController.cs:line 31
+2025-09-02 17:28:36 [ERR] Error saving reservation for customer: G000020
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in G:\Thamalpath\onimta-web-reservation-system\backend\Services\RoomReservationService.cs:line 304
+   at RoomReservationController.SaveReservation(ReservationDto reservation) in G:\Thamalpath\onimta-web-reservation-system\backend\Controllers\RoomReservationController.cs:line 31
+2025-09-02 17:33:03 [ERR] Error saving reservation for customer: G000020
+System.Exception: Database error occurred while saving reservation.
+   at RoomReservationService.SaveOrUpdateReservationAsync(ReservationDto dto) in G:\Thamalpath\onimta-web-reservation-system\backend\Services\RoomReservationService.cs:line 280
+   at RoomReservationController.SaveReservation(ReservationDto reservation) in G:\Thamalpath\onimta-web-reservation-system\backend\Controllers\RoomReservationController.cs:line 31
