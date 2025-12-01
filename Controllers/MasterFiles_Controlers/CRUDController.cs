@@ -39,7 +39,7 @@ namespace OIT_Reservation.Controllers
 
             if (_userService.RegisterUser(user))
             {
-                return Ok("User registered");
+                return Ok("User registered ");
             }
 
             return BadRequest("Registration failed");
@@ -51,10 +51,14 @@ namespace OIT_Reservation.Controllers
         [HttpPost("login")]
         public IActionResult Login([FromBody] User user)
         {
+
             if (_userService.ValidateUser(user))
             {
                 var token = _jwt.GenerateToken(user.Username);
                 return Ok(new { token });
+                
+                
+                
             }
 
             return Unauthorized("Invalid credentials");

@@ -144,49 +144,49 @@ namespace OIT_Reservation.Services
 
             return null;
         }
-        public Customer UpdateCustomer(Customer customer)
-        {
-            try
-            {
-                using var conn = new SqlConnection(_conn);
-                using var cmd = new SqlCommand("sp_Update_Customer", conn)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
+        // public Customer UpdateCustomer(Customer customer)
+        // {
+        //     try
+        //     {
+        //         using var conn = new SqlConnection(_conn);
+        //         using var cmd = new SqlCommand("sp_Update_Customer", conn)
+        //         {
+        //             CommandType = CommandType.StoredProcedure
+        //         };
 
-                // ✅ Add the CustomerCode parameter for WHERE clause
-                cmd.Parameters.AddWithValue("@CustomerCode", customer.CustomerCode ?? (object)DBNull.Value);
+        //         // ✅ Add the CustomerCode parameter for WHERE clause
+        //         cmd.Parameters.AddWithValue("@CustomerCode", customer.CustomerCode ?? (object)DBNull.Value);
 
-                cmd.Parameters.AddWithValue("@CustomerTypeCode", customer.CustomerTypeCode ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@Title", customer.Title ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@Name", customer.Name ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@NIC_PassportNo", customer.NIC_PassportNo ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@NationalityCode", customer.NationalityCode ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@CountryCode", customer.CountryCode ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@Mobile", customer.Mobile ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@Telephone", customer.Telephone ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@email", customer.Email ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@TravelAgentCode", customer.TravelAgentCode ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@CreditLimit", customer.CreditLimit);
-                cmd.Parameters.AddWithValue("@IsActive", customer.IsActive);
-                cmd.Parameters.AddWithValue("@Address", customer.Address ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@Whatsapp", customer.Whatsapp ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@Remark", customer.Remark ?? (object)DBNull.Value);
+        //         cmd.Parameters.AddWithValue("@CustomerTypeCode", customer.CustomerTypeCode ?? (object)DBNull.Value);
+        //         cmd.Parameters.AddWithValue("@Title", customer.Title ?? (object)DBNull.Value);
+        //         cmd.Parameters.AddWithValue("@Name", customer.Name ?? (object)DBNull.Value);
+        //         cmd.Parameters.AddWithValue("@NIC_PassportNo", customer.NIC_PassportNo ?? (object)DBNull.Value);
+        //         cmd.Parameters.AddWithValue("@NationalityCode", customer.NationalityCode ?? (object)DBNull.Value);
+        //         cmd.Parameters.AddWithValue("@CountryCode", customer.CountryCode ?? (object)DBNull.Value);
+        //         cmd.Parameters.AddWithValue("@Mobile", customer.Mobile ?? (object)DBNull.Value);
+        //         cmd.Parameters.AddWithValue("@Telephone", customer.Telephone ?? (object)DBNull.Value);
+        //         cmd.Parameters.AddWithValue("@email", customer.Email ?? (object)DBNull.Value);
+        //         cmd.Parameters.AddWithValue("@TravelAgentCode", customer.TravelAgentCode ?? (object)DBNull.Value);
+        //         cmd.Parameters.AddWithValue("@CreditLimit", customer.CreditLimit);
+        //         cmd.Parameters.AddWithValue("@IsActive", customer.IsActive);
+        //         cmd.Parameters.AddWithValue("@Address", customer.Address ?? (object)DBNull.Value);
+        //         cmd.Parameters.AddWithValue("@Whatsapp", customer.Whatsapp ?? (object)DBNull.Value);
+        //         cmd.Parameters.AddWithValue("@Remark", customer.Remark ?? (object)DBNull.Value);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
+        //         conn.Open();
+        //         cmd.ExecuteNonQuery();
 
-                return customer;
-            }
-            catch (SqlException ex)
-            {
-                throw new ApplicationException($"SQL Error: {ex.Message}");
-            }
-            catch (Exception ex)
-            {
-                throw new ApplicationException($"Error updating customer: {ex.Message}");
-            }
-        }
+        //         return customer;
+        //     }
+        //     catch (SqlException ex)
+        //     {
+        //         throw new ApplicationException($"SQL Error: {ex.Message}");
+        //     }
+        //     catch (Exception ex)
+        //     {
+        //         throw new ApplicationException($"Error updating customer: {ex.Message}");
+        //     }
+        // }
         
         public string UpdateCustomerByCode(string customerCode, Customer customer)
         {
@@ -194,6 +194,8 @@ namespace OIT_Reservation.Services
             using (var cmd = new SqlCommand("sp_Save_Customer", conn))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@CustomerCode", customer.CustomerCode ?? (object)DBNull.Value);
 
                 cmd.Parameters.AddWithValue("@CustomerTypeCode", customer.CustomerTypeCode ?? "");
                 cmd.Parameters.AddWithValue("@Title", customer.Title ?? "");

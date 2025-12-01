@@ -33,6 +33,16 @@ public class ReservationDto {
     public List<RoomDetailDto>? RoomDetails { get; set; }
     public List<ServiceDetailDto>? ServiceDetails { get; set; }
     public List<RoomPaymentDetailDto>? RoomPayDetails { get; set; }
+    public Customer Customer { get; set; } = new Customer();
+
+    public int StatusId { get; set; } = 1;
+
+}
+public class ReceiptInfo
+{
+    public string ReceiptNo { get; set; } = string.Empty;
+    public decimal Amount { get; set; }
+    public int PaymentId { get; set; }
 }
 
 public class RoomDetailDto {
@@ -60,8 +70,15 @@ public class ServiceDetailDto {
 
 public class RoomPaymentDetailDto {
     public int PaymentId { get; set; }
+    //public string PaymentType { get; set; }
     public decimal Amount { get; set; }
     public string? RefNo { get; set; }
     public DateTime? RefDate { get; set; }
     public string? ReceiptNo { get; set; }
+    
+    public int PaymentTypeId { get; set; } // Add this to map payment types properly
 }
+
+
+
+

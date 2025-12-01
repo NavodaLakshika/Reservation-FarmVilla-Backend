@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReservationPaymentDataSet" targetNamespace="http://tempuri.org/ReservationPaymentDataSet.xsd" xmlns:mstns="http://tempuri.org/ReservationPaymentDataSet.xsd" xmlns="http://tempuri.org/ReservationPaymentDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReservationPaymentDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ReservationPaymentDataSet" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReservationPaymentDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Reservation_Payment_Det" msprop:Generator_RowEvHandlerName="Reservation_Payment_DetRowChangeEventHandler" msprop:Generator_RowDeletedName="Reservation_Payment_DetRowDeleted" msprop:Generator_RowDeletingName="Reservation_Payment_DetRowDeleting" msprop:Generator_RowEvArgName="Reservation_Payment_DetRowChangeEvent" msprop:Generator_TablePropName="Reservation_Payment_Det" msprop:Generator_RowChangedName="Reservation_Payment_DetRowChanged" msprop:Generator_UserTableName="Reservation_Payment_Det" msprop:Generator_RowChangingName="Reservation_Payment_DetRowChanging" msprop:Generator_RowClassName="Reservation_Payment_DetRow" msprop:Generator_TableClassName="Reservation_Payment_DetDataTable" msprop:Generator_TableVarName="tableReservation_Payment_Det">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ReservationNo" msprop:Generator_UserColumnName="ReservationNo" msprop:Generator_ColumnPropNameInTable="ReservationNoColumn" msprop:Generator_ColumnPropNameInRow="ReservationNo" msprop:Generator_ColumnVarNameInTable="columnReservationNo" type="xs:string" minOccurs="0" />
+              <xs:element name="ReservationDate" msprop:Generator_UserColumnName="ReservationDate" msprop:Generator_ColumnPropNameInTable="ReservationDateColumn" msprop:Generator_ColumnPropNameInRow="ReservationDate" msprop:Generator_ColumnVarNameInTable="columnReservationDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ReservationStatus" msprop:Generator_UserColumnName="ReservationStatus" msprop:Generator_ColumnPropNameInTable="ReservationStatusColumn" msprop:Generator_ColumnPropNameInRow="ReservationStatus" msprop:Generator_ColumnVarNameInTable="columnReservationStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceiptNo" msprop:Generator_UserColumnName="ReceiptNo" msprop:Generator_ColumnPropNameInTable="ReceiptNoColumn" msprop:Generator_ColumnPropNameInRow="ReceiptNo" msprop:Generator_ColumnVarNameInTable="columnReceiptNo" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceiptDate" msprop:Generator_UserColumnName="ReceiptDate" msprop:Generator_ColumnPropNameInTable="ReceiptDateColumn" msprop:Generator_ColumnPropNameInRow="ReceiptDate" msprop:Generator_ColumnVarNameInTable="columnReceiptDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Email" msprop:Generator_UserColumnName="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" type="xs:string" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_UserColumnName="Remark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" type="xs:string" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_UserColumnName="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="discripPayment" msprop:Generator_UserColumnName="discripPayment" msprop:Generator_ColumnPropNameInTable="discripPaymentColumn" msprop:Generator_ColumnPropNameInRow="discripPayment" msprop:Generator_ColumnVarNameInTable="columndiscripPayment" type="xs:string" minOccurs="0" />
+              <xs:element name="ReportGeneratedDateTime" msprop:Generator_UserColumnName="ReportGeneratedDateTime" msprop:Generator_ColumnPropNameInTable="ReportGeneratedDateTimeColumn" msprop:Generator_ColumnPropNameInRow="ReportGeneratedDateTime" msprop:Generator_ColumnVarNameInTable="columnReportGeneratedDateTime" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerName" msprop:Generator_UserColumnName="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnVarNameInTable="columnCustomerName" type="xs:string" minOccurs="0" />
+              <xs:element name="CheckInDateTime" msprop:Generator_ColumnPropNameInRow="CheckInDateTime" msprop:Generator_ColumnPropNameInTable="CheckInDateTimeColumn" msprop:Generator_ColumnVarNameInTable="columnCheckInDateTime" msprop:Generator_UserColumnName="CheckInDateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CheckOutDateTime" msprop:Generator_ColumnPropNameInRow="CheckOutDateTime" msprop:Generator_ColumnPropNameInTable="CheckOutDateTimeColumn" msprop:Generator_ColumnVarNameInTable="columnCheckOutDateTime" msprop:Generator_UserColumnName="CheckOutDateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ReceiptNoFormatted" msprop:Generator_ColumnPropNameInRow="ReceiptNoFormatted" msprop:Generator_ColumnPropNameInTable="ReceiptNoFormattedColumn" msprop:Generator_ColumnVarNameInTable="columnReceiptNoFormatted" msprop:Generator_UserColumnName="ReceiptNoFormatted" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
