@@ -54,3 +54,469 @@ System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport 
 2025-12-01 10:00:22 [INF] Request finished HTTP/2 GET https://localhost:9307/_vs/browserLink - 200 null text/javascript; charset=UTF-8 360.7168ms
 2025-12-01 10:00:22 [INF] Request starting HTTP/2 GET https://localhost:9307/swagger/v1/swagger.json - null null
 2025-12-01 10:00:23 [INF] Request finished HTTP/2 GET https://localhost:9307/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 369.5754ms
+2025-12-01 11:31:41 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-12-01 11:31:41 [DBG] Hosting starting
+2025-12-01 11:31:41 [INF] User profile is available. Using 'C:\Users\Onimta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-01 11:31:41 [DBG] Reading data from file 'C:\Users\Onimta\AppData\Local\ASP.NET\DataProtection-Keys\key-5b5b8e65-5f3e-4c1a-a6e0-5288f749d340.xml'.
+2025-12-01 11:31:41 [DBG] Found key {5b5b8e65-5f3e-4c1a-a6e0-5288f749d340}.
+2025-12-01 11:31:41 [DBG] Considering key {5b5b8e65-5f3e-4c1a-a6e0-5288f749d340} with expiration date 2026-01-21 06:33:18Z as default key.
+2025-12-01 11:31:41 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-12-01 11:31:41 [DBG] Decrypting secret element using Windows DPAPI.
+2025-12-01 11:31:41 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-12-01 11:31:41 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-12-01 11:31:41 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-12-01 11:31:41 [DBG] Using key {5b5b8e65-5f3e-4c1a-a6e0-5288f749d340} as the default key.
+2025-12-01 11:31:41 [DBG] Key ring with default key {5b5b8e65-5f3e-4c1a-a6e0-5288f749d340} was loaded during application startup.
+2025-12-01 11:31:41 [DBG] Middleware loaded
+2025-12-01 11:31:41 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16515 B).
+2025-12-01 11:31:41 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-12-01 11:31:41 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-12-01 11:31:41 [INF] Now listening on: https://localhost:9307
+2025-12-01 11:31:41 [INF] Now listening on: http://localhost:9308
+2025-12-01 11:31:41 [DBG] Loaded hosting startup assembly OIT_Reservation
+2025-12-01 11:31:41 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-12-01 11:31:41 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-12-01 11:31:41 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-12-01 11:31:42 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-01 11:31:42 [INF] Hosting environment: Development
+2025-12-01 11:31:42 [INF] Content root path: D:\Navoda\Projects\backend
+2025-12-01 11:31:42 [DBG] Hosting started
+2025-12-01 11:31:42 [DBG] Connection id "0HNHGJSCQ3HNV" accepted.
+2025-12-01 11:31:42 [DBG] Connection id "0HNHGJSCQ3HNV" received FIN.
+2025-12-01 11:31:42 [DBG] Connection id "0HNHGJSCQ3HNV" started.
+2025-12-01 11:31:42 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-12-01 11:31:42 [DBG] Connection id "0HNHGJSCQ3HNV" stopped.
+2025-12-01 11:31:42 [DBG] Connection id "0HNHGJSCQ3HNV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-01 11:31:42 [DBG] Connection id "0HNHGJSCQ3HO0" accepted.
+2025-12-01 11:31:42 [DBG] Connection id "0HNHGJSCQ3HO0" started.
+2025-12-01 11:31:42 [DBG] Connection 0HNHGJSCQ3HO0 established using the following protocol: "Tls12"
+2025-12-01 11:31:42 [INF] Request starting HTTP/2 GET https://localhost:9307/index.html - null null
+2025-12-01 11:31:43 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-12-01 11:31:43 [DBG] The request path  does not match the path filter
+2025-12-01 11:31:43 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-12-01 11:31:43 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-12-01 11:31:43 [DBG] Response markup was updated to include Browser Link script injection.
+2025-12-01 11:31:43 [DBG] Response markup was updated to include browser refresh script injection.
+2025-12-01 11:31:43 [INF] Request finished HTTP/2 GET https://localhost:9307/index.html - 200 null text/html;charset=utf-8 309.0503ms
+2025-12-01 11:31:43 [INF] Request starting HTTP/2 GET https://localhost:9307/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-01 11:31:43 [INF] Request starting HTTP/2 GET https://localhost:9307/_vs/browserLink - null null
+2025-12-01 11:31:43 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-12-01 11:31:43 [INF] Request finished HTTP/2 GET https://localhost:9307/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 17.901ms
+2025-12-01 11:31:43 [INF] Request finished HTTP/2 GET https://localhost:9307/_vs/browserLink - 200 null text/javascript; charset=UTF-8 122.0713ms
+2025-12-01 11:31:43 [INF] Request starting HTTP/2 GET https://localhost:9307/swagger/v1/swagger.json - null null
+2025-12-01 11:31:43 [INF] Request finished HTTP/2 GET https://localhost:9307/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 115.5278ms
+2025-12-01 11:31:46 [DBG] Connection id "0HNHGJSCQ3HO1" accepted.
+2025-12-01 11:31:46 [DBG] Connection id "0HNHGJSCQ3HO1" started.
+2025-12-01 11:31:46 [DBG] Connection 0HNHGJSCQ3HO1 established using the following protocol: "Tls12"
+2025-12-01 11:31:46 [INF] Request starting HTTP/2 OPTIONS https://localhost:9307/api/ReservationStatus/getall - null null
+2025-12-01 11:31:46 [INF] Request starting HTTP/2 OPTIONS https://localhost:9307/api/ReservationStatus/getall - null null
+2025-12-01 11:31:46 [DBG] OPTIONS requests are not supported
+2025-12-01 11:31:46 [DBG] OPTIONS requests are not supported
+2025-12-01 11:31:46 [DBG] OPTIONS requests are not supported
+2025-12-01 11:31:46 [DBG] OPTIONS requests are not supported
+2025-12-01 11:31:46 [DBG] OPTIONS requests are not supported
+2025-12-01 11:31:46 [DBG] OPTIONS requests are not supported
+2025-12-01 11:31:46 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2025-12-01 11:31:46 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2025-12-01 11:31:46 [INF] Request OPTIONS /api/ReservationStatus/getall Body: 
+2025-12-01 11:31:46 [INF] Request OPTIONS /api/ReservationStatus/getall Body: 
+2025-12-01 11:31:46 [DBG] 1 candidate(s) found for the request path '/api/ReservationStatus/getall'
+2025-12-01 11:31:46 [DBG] 1 candidate(s) found for the request path '/api/ReservationStatus/getall'
+2025-12-01 11:31:46 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-12-01 11:31:46 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-12-01 11:31:46 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-12-01 11:31:46 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-12-01 11:31:46 [INF] CORS policy execution successful.
+2025-12-01 11:31:46 [INF] CORS policy execution successful.
+2025-12-01 11:31:46 [DBG] The request is a preflight request.
+2025-12-01 11:31:46 [DBG] The request is a preflight request.
+2025-12-01 11:31:46 [INF] Response 204 Body: 
+2025-12-01 11:31:46 [INF] Response 204 Body: 
+2025-12-01 11:31:46 [INF] Request finished HTTP/2 OPTIONS https://localhost:9307/api/ReservationStatus/getall - 204 null null 91.1064ms
+2025-12-01 11:31:46 [INF] Request finished HTTP/2 OPTIONS https://localhost:9307/api/ReservationStatus/getall - 204 null null 93.2267ms
+2025-12-01 11:31:46 [INF] Request starting HTTP/2 GET https://localhost:9307/api/ReservationStatus/getall - null null
+2025-12-01 11:31:46 [DBG] The request path  does not match the path filter
+2025-12-01 11:31:46 [DBG] The request path /api/ReservationStatus/getall does not match a supported file type
+2025-12-01 11:31:46 [DBG] The request path  does not match the path filter
+2025-12-01 11:31:46 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2025-12-01 11:31:46 [INF] Request GET /api/ReservationStatus/getall Body: 
+2025-12-01 11:31:46 [DBG] 1 candidate(s) found for the request path '/api/ReservationStatus/getall'
+2025-12-01 11:31:46 [DBG] Endpoint 'ReservationStatusController.GetVisibleStatuses (OIT_Reservation)' with route pattern 'api/ReservationStatus/getall' is valid for the request path '/api/ReservationStatus/getall'
+2025-12-01 11:31:46 [DBG] Request matched endpoint 'ReservationStatusController.GetVisibleStatuses (OIT_Reservation)'
+2025-12-01 11:31:46 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-12-01 11:31:46 [INF] CORS policy execution successful.
+2025-12-01 11:31:46 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'IDX10820: Invalid character found in Base64UrlEncoding. Character: '123', Encoding: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.')
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.Decode(ReadOnlySpan`1 input, Int32 offset, Int32 length, Byte[] output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2025-12-01 11:31:46 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2025-12-01 11:31:46 [INF] Executing endpoint 'ReservationStatusController.GetVisibleStatuses (OIT_Reservation)'
+2025-12-01 11:31:46 [INF] Route matched with {action = "GetVisibleStatuses", controller = "ReservationStatus"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ReservationStatus]] GetVisibleStatuses() on controller ReservationStatusController (OIT_Reservation).
+2025-12-01 11:31:46 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-01 11:31:46 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-01 11:31:46 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-12-01 11:31:46 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-01 11:31:46 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-01 11:31:46 [DBG] Executing controller factory for controller ReservationStatusController (OIT_Reservation)
+2025-12-01 11:31:46 [DBG] Executed controller factory for controller ReservationStatusController (OIT_Reservation)
+2025-12-01 11:31:46 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-01 11:31:46 [DBG] No information found on request to perform content negotiation.
+2025-12-01 11:31:46 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-01 11:31:46 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-01 11:31:46 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-01 11:31:46 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ReservationStatus, OIT_Reservation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 11:31:46 [INF] Executed action ReservationStatusController.GetVisibleStatuses (OIT_Reservation) in 440.2489ms
+2025-12-01 11:31:46 [INF] Executed endpoint 'ReservationStatusController.GetVisibleStatuses (OIT_Reservation)'
+2025-12-01 11:31:46 [INF] Response 200 Body: [{"statusId":1,"statusName":"Booked","rowNo":1,"statusType":"1","colorCode":"#FFA500","isShow":true},{"statusId":2,"statusName":"Confirmed","rowNo":2,"statusType":"2","colorCode":"#5EFB6E","isShow":true},{"statusId":3,"statusName":"Checked In","rowNo":3,"statusType":"3","colorCode":"#6495ED","isShow":true},{"statusId":4,"statusName":"Checked Out","rowNo":4,"statusType":"4","colorCode":"#FFF8DC","isShow":true},{"statusId":6,"statusName":"Finalized","rowNo":6,"statusType":"6","colorCode":"#3de3cc","isShow":true}]
+2025-12-01 11:31:46 [INF] Request finished HTTP/2 GET https://localhost:9307/api/ReservationStatus/getall - 200 null application/json; charset=utf-8 729.9598ms
+2025-12-01 11:31:46 [INF] Request starting HTTP/2 GET https://localhost:9307/api/ReservationStatus/getall - null null
+2025-12-01 11:31:46 [DBG] The request path  does not match the path filter
+2025-12-01 11:31:46 [DBG] The request path /api/ReservationStatus/getall does not match a supported file type
+2025-12-01 11:31:46 [DBG] The request path  does not match the path filter
+2025-12-01 11:31:46 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2025-12-01 11:31:46 [INF] Request GET /api/ReservationStatus/getall Body: 
+2025-12-01 11:31:46 [DBG] 1 candidate(s) found for the request path '/api/ReservationStatus/getall'
+2025-12-01 11:31:46 [DBG] Endpoint 'ReservationStatusController.GetVisibleStatuses (OIT_Reservation)' with route pattern 'api/ReservationStatus/getall' is valid for the request path '/api/ReservationStatus/getall'
+2025-12-01 11:31:46 [DBG] Request matched endpoint 'ReservationStatusController.GetVisibleStatuses (OIT_Reservation)'
+2025-12-01 11:31:46 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-12-01 11:31:46 [INF] CORS policy execution successful.
+2025-12-01 11:31:46 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'IDX10820: Invalid character found in Base64UrlEncoding. Character: '123', Encoding: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.')
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.Decode(ReadOnlySpan`1 input, Int32 offset, Int32 length, Byte[] output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2025-12-01 11:31:46 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2025-12-01 11:31:46 [INF] Executing endpoint 'ReservationStatusController.GetVisibleStatuses (OIT_Reservation)'
+2025-12-01 11:31:46 [INF] Route matched with {action = "GetVisibleStatuses", controller = "ReservationStatus"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ReservationStatus]] GetVisibleStatuses() on controller ReservationStatusController (OIT_Reservation).
+2025-12-01 11:31:46 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-01 11:31:46 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-01 11:31:46 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-12-01 11:31:46 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-01 11:31:46 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-01 11:31:46 [DBG] Executing controller factory for controller ReservationStatusController (OIT_Reservation)
+2025-12-01 11:31:46 [DBG] Executed controller factory for controller ReservationStatusController (OIT_Reservation)
+2025-12-01 11:31:46 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-01 11:31:46 [DBG] No information found on request to perform content negotiation.
+2025-12-01 11:31:46 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-01 11:31:46 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-01 11:31:46 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-01 11:31:46 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ReservationStatus, OIT_Reservation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 11:31:46 [INF] Executed action ReservationStatusController.GetVisibleStatuses (OIT_Reservation) in 20.2452ms
+2025-12-01 11:31:46 [INF] Executed endpoint 'ReservationStatusController.GetVisibleStatuses (OIT_Reservation)'
+2025-12-01 11:31:46 [INF] Response 200 Body: [{"statusId":1,"statusName":"Booked","rowNo":1,"statusType":"1","colorCode":"#FFA500","isShow":true},{"statusId":2,"statusName":"Confirmed","rowNo":2,"statusType":"2","colorCode":"#5EFB6E","isShow":true},{"statusId":3,"statusName":"Checked In","rowNo":3,"statusType":"3","colorCode":"#6495ED","isShow":true},{"statusId":4,"statusName":"Checked Out","rowNo":4,"statusType":"4","colorCode":"#FFF8DC","isShow":true},{"statusId":6,"statusName":"Finalized","rowNo":6,"statusType":"6","colorCode":"#3de3cc","isShow":true}]
+2025-12-01 11:31:46 [INF] Request finished HTTP/2 GET https://localhost:9307/api/ReservationStatus/getall - 200 null application/json; charset=utf-8 77.1809ms
+2025-12-01 11:31:51 [INF] Request starting HTTP/2 OPTIONS https://localhost:9307/api/RoomReservation/byStatus/1 - null null
+2025-12-01 11:31:51 [DBG] OPTIONS requests are not supported
+2025-12-01 11:31:51 [DBG] OPTIONS requests are not supported
+2025-12-01 11:31:51 [DBG] OPTIONS requests are not supported
+2025-12-01 11:31:51 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2025-12-01 11:31:51 [INF] Request OPTIONS /api/RoomReservation/byStatus/1 Body: 
+2025-12-01 11:31:51 [DBG] 1 candidate(s) found for the request path '/api/RoomReservation/byStatus/1'
+2025-12-01 11:31:51 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-12-01 11:31:51 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-12-01 11:31:51 [INF] CORS policy execution successful.
+2025-12-01 11:31:51 [DBG] The request is a preflight request.
+2025-12-01 11:31:51 [INF] Response 204 Body: 
+2025-12-01 11:31:51 [INF] Request finished HTTP/2 OPTIONS https://localhost:9307/api/RoomReservation/byStatus/1 - 204 null null 56.2854ms
+2025-12-01 11:31:51 [INF] Request starting HTTP/2 GET https://localhost:9307/api/RoomReservation/byStatus/1 - null null
+2025-12-01 11:31:51 [DBG] The request path  does not match the path filter
+2025-12-01 11:31:51 [DBG] The request path /api/RoomReservation/byStatus/1 does not match a supported file type
+2025-12-01 11:31:51 [DBG] The request path  does not match the path filter
+2025-12-01 11:31:51 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2025-12-01 11:31:51 [INF] Request GET /api/RoomReservation/byStatus/1 Body: 
+2025-12-01 11:31:51 [DBG] 1 candidate(s) found for the request path '/api/RoomReservation/byStatus/1'
+2025-12-01 11:31:51 [DBG] Endpoint 'RoomReservationController.GetByStatus (OIT_Reservation)' with route pattern 'api/RoomReservation/byStatus/{statusId}' is valid for the request path '/api/RoomReservation/byStatus/1'
+2025-12-01 11:31:51 [DBG] Request matched endpoint 'RoomReservationController.GetByStatus (OIT_Reservation)'
+2025-12-01 11:31:51 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-12-01 11:31:51 [INF] CORS policy execution successful.
+2025-12-01 11:31:51 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'IDX10820: Invalid character found in Base64UrlEncoding. Character: '123', Encoding: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.')
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.Decode(ReadOnlySpan`1 input, Int32 offset, Int32 length, Byte[] output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2025-12-01 11:31:51 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2025-12-01 11:31:51 [INF] Executing endpoint 'RoomReservationController.GetByStatus (OIT_Reservation)'
+2025-12-01 11:31:51 [INF] Route matched with {action = "GetByStatus", controller = "RoomReservation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByStatus(Int32, System.String, System.String) on controller RoomReservationController (OIT_Reservation).
+2025-12-01 11:31:51 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-01 11:31:51 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-01 11:31:51 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-12-01 11:31:51 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-01 11:31:51 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-01 11:31:51 [DBG] Executing controller factory for controller RoomReservationController (OIT_Reservation)
+2025-12-01 11:31:51 [DBG] Executed controller factory for controller RoomReservationController (OIT_Reservation)
+2025-12-01 11:31:51 [DBG] Attempting to bind parameter 'statusId' of type 'System.Int32' ...
+2025-12-01 11:31:51 [DBG] Attempting to bind parameter 'statusId' of type 'System.Int32' using the name 'statusId' in request data ...
+2025-12-01 11:31:51 [DBG] Done attempting to bind parameter 'statusId' of type 'System.Int32'.
+2025-12-01 11:31:51 [DBG] Done attempting to bind parameter 'statusId' of type 'System.Int32'.
+2025-12-01 11:31:51 [DBG] Attempting to validate the bound parameter 'statusId' of type 'System.Int32' ...
+2025-12-01 11:31:51 [DBG] Done attempting to validate the bound parameter 'statusId' of type 'System.Int32'.
+2025-12-01 11:31:51 [DBG] Attempting to bind parameter 'fromDate' of type 'System.String' ...
+2025-12-01 11:31:51 [DBG] Attempting to bind parameter 'fromDate' of type 'System.String' using the name '' in request data ...
+2025-12-01 11:31:51 [DBG] Could not find a value in the request with name '' for binding parameter 'fromDate' of type 'System.String'.
+2025-12-01 11:31:51 [DBG] Done attempting to bind parameter 'fromDate' of type 'System.String'.
+2025-12-01 11:31:51 [DBG] Done attempting to bind parameter 'fromDate' of type 'System.String'.
+2025-12-01 11:31:51 [DBG] Attempting to validate the bound parameter 'fromDate' of type 'System.String' ...
+2025-12-01 11:31:51 [DBG] Done attempting to validate the bound parameter 'fromDate' of type 'System.String'.
+2025-12-01 11:31:51 [DBG] Attempting to bind parameter 'toDate' of type 'System.String' ...
+2025-12-01 11:31:51 [DBG] Attempting to bind parameter 'toDate' of type 'System.String' using the name '' in request data ...
+2025-12-01 11:31:51 [DBG] Could not find a value in the request with name '' for binding parameter 'toDate' of type 'System.String'.
+2025-12-01 11:31:51 [DBG] Done attempting to bind parameter 'toDate' of type 'System.String'.
+2025-12-01 11:31:51 [DBG] Done attempting to bind parameter 'toDate' of type 'System.String'.
+2025-12-01 11:31:51 [DBG] Attempting to validate the bound parameter 'toDate' of type 'System.String' ...
+2025-12-01 11:31:51 [DBG] Done attempting to validate the bound parameter 'toDate' of type 'System.String'.
+2025-12-01 11:31:51 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-01 11:31:51 [DBG] No information found on request to perform content negotiation.
+2025-12-01 11:31:51 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-01 11:31:51 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-01 11:31:51 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-01 11:31:51 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ReservationDto, OIT_Reservation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 11:31:51 [INF] Executed action RoomReservationController.GetByStatus (OIT_Reservation) in 200.5113ms
+2025-12-01 11:31:51 [INF] Executed endpoint 'RoomReservationController.GetByStatus (OIT_Reservation)'
+2025-12-01 11:31:51 [INF] Response 200 Body: [{"reservationNo":"R000002","reservationDate":"2025-11-27T00:00:00","reservationType":1,"customerCode":"G000002","mobile":"0721220001","telephone":"0721220002","email":"lakshika@gmail.com","travelAgentCode":"TA002","checkinDateTime":"2025-11-29T08:00:00","checkoutDateTime":"2025-11-29T12:00:00","noOfVehicles":1,"noOfAdults":1,"noOfKids":1,"eventType":null,"setupStyle":null,"subTotal":37000.00,"discountPer":0.00,"discount":0.00,"grossAmount":37000.00,"paidAmount":42000.00,"dueAmount":-5000.00,"reservationNote":"1","refundAmount":5000.00,"refundNote":"","referenceNo":"1","bookingResourceId":1,"bookingReferenceNo":"11","reservationStatus":"Finalized","user":"Admin","crUser":null,"edUser":null,"roomDetails":[{"reservationRoomDetailsID":0,"reservationNo":null,"roomCode":"R0001","packageCode":"PKG0001","noOfDays":1,"price":37000.00,"amount":37000.00,"isDelete":false,"modifiedDate":null,"checkinDate":"2025-11-29T08:00:00","checkoutDate":"2025-11-29T12:00:00"}],"serviceDetails":[],"roomPayDetails":[{"paymentId":1,"amount":7000.00,"refNo":"","refDate":"2025-11-29T00:00:00","receiptNo":"RC000002","paymentTypeId":0},{"paymentId":1,"amount":35000.00,"refNo":"","refDate":"2025-11-29T00:00:00","receiptNo":"RC000004","paymentTypeId":0}],"customer":{"customerTypeCode":"001","customerCode":"G000002","title":"Mr.","name":"Lakshika","niC_PassportNo":"200130500240","nationalityCode":"LKA","countryCode":"CC001","mobile":"0721220001","telephone":"0721220002","email":"lakshika@gmail.com","travelAgentCode":"TA002","creditLimit":60000.00,"isActive":true,"isNew":false,"address":"Maharagama","whatsapp":"","remark":""},"statusId":1}]
+2025-12-01 11:31:51 [INF] Request finished HTTP/2 GET https://localhost:9307/api/RoomReservation/byStatus/1 - 200 null application/json; charset=utf-8 282.3029ms
+2025-12-01 11:32:08 [INF] Request starting HTTP/2 OPTIONS https://localhost:9307/api/RoomReservation/byStatus/1?fromDate=2025-12-01&toDate=2025-12-01 - null null
+2025-12-01 11:32:08 [DBG] OPTIONS requests are not supported
+2025-12-01 11:32:08 [DBG] OPTIONS requests are not supported
+2025-12-01 11:32:08 [DBG] OPTIONS requests are not supported
+2025-12-01 11:32:08 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2025-12-01 11:32:08 [INF] Request OPTIONS /api/RoomReservation/byStatus/1 Body: 
+2025-12-01 11:32:08 [DBG] 1 candidate(s) found for the request path '/api/RoomReservation/byStatus/1'
+2025-12-01 11:32:08 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-12-01 11:32:08 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-12-01 11:32:08 [INF] CORS policy execution successful.
+2025-12-01 11:32:08 [DBG] The request is a preflight request.
+2025-12-01 11:32:08 [INF] Response 204 Body: 
+2025-12-01 11:32:08 [INF] Request finished HTTP/2 OPTIONS https://localhost:9307/api/RoomReservation/byStatus/1?fromDate=2025-12-01&toDate=2025-12-01 - 204 null null 23.5356ms
+2025-12-01 11:32:08 [INF] Request starting HTTP/2 GET https://localhost:9307/api/RoomReservation/byStatus/1?fromDate=2025-12-01&toDate=2025-12-01 - null null
+2025-12-01 11:32:08 [DBG] The request path  does not match the path filter
+2025-12-01 11:32:08 [DBG] The request path /api/RoomReservation/byStatus/1 does not match a supported file type
+2025-12-01 11:32:08 [DBG] The request path  does not match the path filter
+2025-12-01 11:32:08 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2025-12-01 11:32:08 [INF] Request GET /api/RoomReservation/byStatus/1 Body: 
+2025-12-01 11:32:08 [DBG] 1 candidate(s) found for the request path '/api/RoomReservation/byStatus/1'
+2025-12-01 11:32:08 [DBG] Endpoint 'RoomReservationController.GetByStatus (OIT_Reservation)' with route pattern 'api/RoomReservation/byStatus/{statusId}' is valid for the request path '/api/RoomReservation/byStatus/1'
+2025-12-01 11:32:08 [DBG] Request matched endpoint 'RoomReservationController.GetByStatus (OIT_Reservation)'
+2025-12-01 11:32:08 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-12-01 11:32:08 [INF] CORS policy execution successful.
+2025-12-01 11:32:08 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'IDX10820: Invalid character found in Base64UrlEncoding. Character: '123', Encoding: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.')
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.Decode(ReadOnlySpan`1 input, Int32 offset, Int32 length, Byte[] output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2025-12-01 11:32:08 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2025-12-01 11:32:08 [INF] Executing endpoint 'RoomReservationController.GetByStatus (OIT_Reservation)'
+2025-12-01 11:32:08 [INF] Route matched with {action = "GetByStatus", controller = "RoomReservation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByStatus(Int32, System.String, System.String) on controller RoomReservationController (OIT_Reservation).
+2025-12-01 11:32:08 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-01 11:32:08 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-01 11:32:08 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-12-01 11:32:08 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-01 11:32:08 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-01 11:32:08 [DBG] Executing controller factory for controller RoomReservationController (OIT_Reservation)
+2025-12-01 11:32:08 [DBG] Executed controller factory for controller RoomReservationController (OIT_Reservation)
+2025-12-01 11:32:08 [DBG] Attempting to bind parameter 'statusId' of type 'System.Int32' ...
+2025-12-01 11:32:08 [DBG] Attempting to bind parameter 'statusId' of type 'System.Int32' using the name 'statusId' in request data ...
+2025-12-01 11:32:08 [DBG] Done attempting to bind parameter 'statusId' of type 'System.Int32'.
+2025-12-01 11:32:08 [DBG] Done attempting to bind parameter 'statusId' of type 'System.Int32'.
+2025-12-01 11:32:08 [DBG] Attempting to validate the bound parameter 'statusId' of type 'System.Int32' ...
+2025-12-01 11:32:08 [DBG] Done attempting to validate the bound parameter 'statusId' of type 'System.Int32'.
+2025-12-01 11:32:08 [DBG] Attempting to bind parameter 'fromDate' of type 'System.String' ...
+2025-12-01 11:32:08 [DBG] Attempting to bind parameter 'fromDate' of type 'System.String' using the name 'fromDate' in request data ...
+2025-12-01 11:32:08 [DBG] Done attempting to bind parameter 'fromDate' of type 'System.String'.
+2025-12-01 11:32:08 [DBG] Done attempting to bind parameter 'fromDate' of type 'System.String'.
+2025-12-01 11:32:08 [DBG] Attempting to validate the bound parameter 'fromDate' of type 'System.String' ...
+2025-12-01 11:32:08 [DBG] Done attempting to validate the bound parameter 'fromDate' of type 'System.String'.
+2025-12-01 11:32:08 [DBG] Attempting to bind parameter 'toDate' of type 'System.String' ...
+2025-12-01 11:32:08 [DBG] Attempting to bind parameter 'toDate' of type 'System.String' using the name 'toDate' in request data ...
+2025-12-01 11:32:08 [DBG] Done attempting to bind parameter 'toDate' of type 'System.String'.
+2025-12-01 11:32:08 [DBG] Done attempting to bind parameter 'toDate' of type 'System.String'.
+2025-12-01 11:32:08 [DBG] Attempting to validate the bound parameter 'toDate' of type 'System.String' ...
+2025-12-01 11:32:08 [DBG] Done attempting to validate the bound parameter 'toDate' of type 'System.String'.
+2025-12-01 11:32:08 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-01 11:32:08 [DBG] No information found on request to perform content negotiation.
+2025-12-01 11:32:08 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-01 11:32:08 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-01 11:32:08 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-01 11:32:08 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ReservationDto, OIT_Reservation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 11:32:08 [INF] Executed action RoomReservationController.GetByStatus (OIT_Reservation) in 71.278ms
+2025-12-01 11:32:08 [INF] Executed endpoint 'RoomReservationController.GetByStatus (OIT_Reservation)'
+2025-12-01 11:32:08 [INF] Response 200 Body: []
+2025-12-01 11:32:08 [INF] Request finished HTTP/2 GET https://localhost:9307/api/RoomReservation/byStatus/1?fromDate=2025-12-01&toDate=2025-12-01 - 200 null application/json; charset=utf-8 136.4932ms
+2025-12-01 11:32:14 [INF] Request starting HTTP/2 OPTIONS https://localhost:9307/api/RoomReservation/byStatus/1?fromDate=2025-11-01&toDate=2025-12-01 - null null
+2025-12-01 11:32:14 [DBG] OPTIONS requests are not supported
+2025-12-01 11:32:14 [DBG] OPTIONS requests are not supported
+2025-12-01 11:32:14 [DBG] OPTIONS requests are not supported
+2025-12-01 11:32:14 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2025-12-01 11:32:14 [INF] Request OPTIONS /api/RoomReservation/byStatus/1 Body: 
+2025-12-01 11:32:14 [DBG] 1 candidate(s) found for the request path '/api/RoomReservation/byStatus/1'
+2025-12-01 11:32:14 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-12-01 11:32:14 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-12-01 11:32:14 [INF] CORS policy execution successful.
+2025-12-01 11:32:14 [DBG] The request is a preflight request.
+2025-12-01 11:32:14 [INF] Response 204 Body: 
+2025-12-01 11:32:14 [INF] Request finished HTTP/2 OPTIONS https://localhost:9307/api/RoomReservation/byStatus/1?fromDate=2025-11-01&toDate=2025-12-01 - 204 null null 26.2378ms
+2025-12-01 11:32:14 [INF] Request starting HTTP/2 GET https://localhost:9307/api/RoomReservation/byStatus/1?fromDate=2025-11-01&toDate=2025-12-01 - null null
+2025-12-01 11:32:14 [DBG] The request path  does not match the path filter
+2025-12-01 11:32:14 [DBG] The request path /api/RoomReservation/byStatus/1 does not match a supported file type
+2025-12-01 11:32:14 [DBG] The request path  does not match the path filter
+2025-12-01 11:32:14 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2025-12-01 11:32:14 [INF] Request GET /api/RoomReservation/byStatus/1 Body: 
+2025-12-01 11:32:14 [DBG] 1 candidate(s) found for the request path '/api/RoomReservation/byStatus/1'
+2025-12-01 11:32:14 [DBG] Endpoint 'RoomReservationController.GetByStatus (OIT_Reservation)' with route pattern 'api/RoomReservation/byStatus/{statusId}' is valid for the request path '/api/RoomReservation/byStatus/1'
+2025-12-01 11:32:14 [DBG] Request matched endpoint 'RoomReservationController.GetByStatus (OIT_Reservation)'
+2025-12-01 11:32:14 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-12-01 11:32:14 [INF] CORS policy execution successful.
+2025-12-01 11:32:14 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'IDX10820: Invalid character found in Base64UrlEncoding. Character: '123', Encoding: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.')
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.Decode(ReadOnlySpan`1 input, Int32 offset, Int32 length, Byte[] output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2025-12-01 11:32:14 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2025-12-01 11:32:14 [INF] Executing endpoint 'RoomReservationController.GetByStatus (OIT_Reservation)'
+2025-12-01 11:32:14 [INF] Route matched with {action = "GetByStatus", controller = "RoomReservation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByStatus(Int32, System.String, System.String) on controller RoomReservationController (OIT_Reservation).
+2025-12-01 11:32:14 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-01 11:32:14 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-01 11:32:14 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-12-01 11:32:14 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-01 11:32:14 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-01 11:32:14 [DBG] Executing controller factory for controller RoomReservationController (OIT_Reservation)
+2025-12-01 11:32:14 [DBG] Executed controller factory for controller RoomReservationController (OIT_Reservation)
+2025-12-01 11:32:14 [DBG] Attempting to bind parameter 'statusId' of type 'System.Int32' ...
+2025-12-01 11:32:14 [DBG] Attempting to bind parameter 'statusId' of type 'System.Int32' using the name 'statusId' in request data ...
+2025-12-01 11:32:14 [DBG] Done attempting to bind parameter 'statusId' of type 'System.Int32'.
+2025-12-01 11:32:14 [DBG] Done attempting to bind parameter 'statusId' of type 'System.Int32'.
+2025-12-01 11:32:15 [DBG] Attempting to validate the bound parameter 'statusId' of type 'System.Int32' ...
+2025-12-01 11:32:15 [DBG] Done attempting to validate the bound parameter 'statusId' of type 'System.Int32'.
+2025-12-01 11:32:15 [DBG] Attempting to bind parameter 'fromDate' of type 'System.String' ...
+2025-12-01 11:32:15 [DBG] Attempting to bind parameter 'fromDate' of type 'System.String' using the name 'fromDate' in request data ...
+2025-12-01 11:32:15 [DBG] Done attempting to bind parameter 'fromDate' of type 'System.String'.
+2025-12-01 11:32:15 [DBG] Done attempting to bind parameter 'fromDate' of type 'System.String'.
+2025-12-01 11:32:15 [DBG] Attempting to validate the bound parameter 'fromDate' of type 'System.String' ...
+2025-12-01 11:32:15 [DBG] Done attempting to validate the bound parameter 'fromDate' of type 'System.String'.
+2025-12-01 11:32:15 [DBG] Attempting to bind parameter 'toDate' of type 'System.String' ...
+2025-12-01 11:32:15 [DBG] Attempting to bind parameter 'toDate' of type 'System.String' using the name 'toDate' in request data ...
+2025-12-01 11:32:15 [DBG] Done attempting to bind parameter 'toDate' of type 'System.String'.
+2025-12-01 11:32:15 [DBG] Done attempting to bind parameter 'toDate' of type 'System.String'.
+2025-12-01 11:32:15 [DBG] Attempting to validate the bound parameter 'toDate' of type 'System.String' ...
+2025-12-01 11:32:15 [DBG] Done attempting to validate the bound parameter 'toDate' of type 'System.String'.
+2025-12-01 11:32:15 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-01 11:32:15 [DBG] No information found on request to perform content negotiation.
+2025-12-01 11:32:15 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-01 11:32:15 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-01 11:32:15 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-01 11:32:15 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ReservationDto, OIT_Reservation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 11:32:15 [INF] Executed action RoomReservationController.GetByStatus (OIT_Reservation) in 60.8659ms
+2025-12-01 11:32:15 [INF] Executed endpoint 'RoomReservationController.GetByStatus (OIT_Reservation)'
+2025-12-01 11:32:15 [INF] Response 200 Body: [{"reservationNo":"R000002","reservationDate":"2025-11-27T00:00:00","reservationType":1,"customerCode":"G000002","mobile":"0721220001","telephone":"0721220002","email":"lakshika@gmail.com","travelAgentCode":"TA002","checkinDateTime":"2025-11-29T08:00:00","checkoutDateTime":"2025-11-29T12:00:00","noOfVehicles":1,"noOfAdults":1,"noOfKids":1,"eventType":null,"setupStyle":null,"subTotal":37000.00,"discountPer":0.00,"discount":0.00,"grossAmount":37000.00,"paidAmount":42000.00,"dueAmount":-5000.00,"reservationNote":"1","refundAmount":5000.00,"refundNote":"","referenceNo":"1","bookingResourceId":1,"bookingReferenceNo":"11","reservationStatus":"Finalized","user":"Admin","crUser":null,"edUser":null,"roomDetails":[{"reservationRoomDetailsID":0,"reservationNo":null,"roomCode":"R0001","packageCode":"PKG0001","noOfDays":1,"price":37000.00,"amount":37000.00,"isDelete":false,"modifiedDate":null,"checkinDate":"2025-11-29T08:00:00","checkoutDate":"2025-11-29T12:00:00"}],"serviceDetails":[],"roomPayDetails":[{"paymentId":1,"amount":7000.00,"refNo":"","refDate":"2025-11-29T00:00:00","receiptNo":"RC000002","paymentTypeId":0},{"paymentId":1,"amount":35000.00,"refNo":"","refDate":"2025-11-29T00:00:00","receiptNo":"RC000004","paymentTypeId":0}],"customer":{"customerTypeCode":"001","customerCode":"G000002","title":"Mr.","name":"Lakshika","niC_PassportNo":"200130500240","nationalityCode":"LKA","countryCode":"CC001","mobile":"0721220001","telephone":"0721220002","email":"lakshika@gmail.com","travelAgentCode":"TA002","creditLimit":60000.00,"isActive":true,"isNew":false,"address":"Maharagama","whatsapp":"","remark":""},"statusId":1}]
+2025-12-01 11:32:15 [INF] Request finished HTTP/2 GET https://localhost:9307/api/RoomReservation/byStatus/1?fromDate=2025-11-01&toDate=2025-12-01 - 200 null application/json; charset=utf-8 145.0605ms
+2025-12-01 15:59:01 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-12-01 15:59:02 [DBG] Hosting starting
+2025-12-01 15:59:02 [INF] User profile is available. Using 'C:\Users\Onimta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-01 15:59:02 [DBG] Reading data from file 'C:\Users\Onimta\AppData\Local\ASP.NET\DataProtection-Keys\key-5b5b8e65-5f3e-4c1a-a6e0-5288f749d340.xml'.
+2025-12-01 15:59:02 [DBG] Found key {5b5b8e65-5f3e-4c1a-a6e0-5288f749d340}.
+2025-12-01 15:59:02 [DBG] Considering key {5b5b8e65-5f3e-4c1a-a6e0-5288f749d340} with expiration date 2026-01-21 06:33:18Z as default key.
+2025-12-01 15:59:03 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-12-01 15:59:03 [DBG] Decrypting secret element using Windows DPAPI.
+2025-12-01 15:59:03 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-12-01 15:59:03 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-12-01 15:59:03 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-12-01 15:59:03 [DBG] Using key {5b5b8e65-5f3e-4c1a-a6e0-5288f749d340} as the default key.
+2025-12-01 15:59:03 [DBG] Key ring with default key {5b5b8e65-5f3e-4c1a-a6e0-5288f749d340} was loaded during application startup.
+2025-12-01 15:59:03 [DBG] Middleware loaded
+2025-12-01 15:59:03 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16515 B).
+2025-12-01 15:59:03 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-12-01 15:59:03 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-12-01 15:59:03 [INF] Now listening on: https://localhost:9307
+2025-12-01 15:59:03 [INF] Now listening on: http://localhost:9308
+2025-12-01 15:59:03 [DBG] Loaded hosting startup assembly OIT_Reservation
+2025-12-01 15:59:03 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-12-01 15:59:03 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-12-01 15:59:03 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-12-01 15:59:03 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-01 15:59:03 [INF] Hosting environment: Development
+2025-12-01 15:59:03 [INF] Content root path: D:\Navoda\Projects\backend
+2025-12-01 15:59:03 [DBG] Hosting started
+2025-12-01 15:59:03 [DBG] Connection id "0HNHGOHPJUH9H" received FIN.
+2025-12-01 15:59:03 [DBG] Connection id "0HNHGOHPJUH9H" accepted.
+2025-12-01 15:59:03 [DBG] Connection id "0HNHGOHPJUH9H" started.
+2025-12-01 15:59:04 [DBG] Connection id "0HNHGOHPJUH9I" accepted.
+2025-12-01 15:59:04 [DBG] Connection id "0HNHGOHPJUH9I" started.
+2025-12-01 15:59:03 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-12-01 15:59:04 [DBG] Connection id "0HNHGOHPJUH9H" stopped.
+2025-12-01 15:59:04 [DBG] Connection id "0HNHGOHPJUH9H" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-01 15:59:04 [DBG] Connection 0HNHGOHPJUH9I established using the following protocol: "Tls12"
+2025-12-01 15:59:04 [INF] Request starting HTTP/2 GET https://localhost:9307/index.html - null null
+2025-12-01 15:59:04 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-12-01 15:59:04 [DBG] The request path  does not match the path filter
+2025-12-01 15:59:04 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-12-01 15:59:05 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-12-01 15:59:05 [DBG] Response markup was updated to include Browser Link script injection.
+2025-12-01 15:59:05 [DBG] Response markup was updated to include browser refresh script injection.
+2025-12-01 15:59:05 [INF] Request finished HTTP/2 GET https://localhost:9307/index.html - 200 null text/html;charset=utf-8 543.784ms
+2025-12-01 15:59:05 [INF] Request starting HTTP/2 GET https://localhost:9307/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-01 15:59:05 [INF] Request starting HTTP/2 GET https://localhost:9307/_vs/browserLink - null null
+2025-12-01 15:59:05 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-12-01 15:59:05 [INF] Request finished HTTP/2 GET https://localhost:9307/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 13.5681ms
+2025-12-01 15:59:05 [INF] Request finished HTTP/2 GET https://localhost:9307/_vs/browserLink - 200 null text/javascript; charset=UTF-8 118.8436ms
+2025-12-01 15:59:05 [INF] Request starting HTTP/2 GET https://localhost:9307/swagger/v1/swagger.json - null null
+2025-12-01 15:59:05 [INF] Request finished HTTP/2 GET https://localhost:9307/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 258.7316ms
+2025-12-01 16:19:43 [DBG] Connection id "0HNHGOHPJUH9I" received FIN.
+2025-12-01 16:19:43 [DBG] The connection queue processing loop for 0HNHGOHPJUH9I completed.
+2025-12-01 16:19:43 [DBG] Connection id "0HNHGOHPJUH9I" is closed. The last processed stream ID was 7.
+2025-12-01 16:19:43 [DBG] Connection id "0HNHGOHPJUH9I" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-01 16:19:43 [DBG] Connection id "0HNHGOHPJUH9I" stopped.

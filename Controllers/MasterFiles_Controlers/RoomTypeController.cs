@@ -89,5 +89,30 @@ namespace OIT_Reservation.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
+        // Add this to your RoomController.cs
+        [HttpDelete("delete/{RoomTypeCode}")]
+        public IActionResult Delete(string RoomTypeCode)
+        {
+            try
+            {
+                bool isDeleted = _service.Delete(RoomTypeCode);
+
+                if (isDeleted)
+                    return Ok("RoomType deleted successfully.");
+                else
+                    return NotFound("RoomType not found.");
+            }
+            catch (SqlException ex) when (ex.Number == 547) // Foreign key constraint
+            {
+                return BadRequest("Cannot delete roomtype because it is referenced in other records.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+
     }
 }

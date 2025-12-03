@@ -114,5 +114,20 @@ namespace OIT_Reservation.Services
 
             return nextCode;
         }
+        public bool Delete(string roomCode)
+        {
+            using var conn = new SqlConnection(_connectionString);
+            conn.Open();
+
+            using var cmd = new SqlCommand(
+                "DELETE FROM Reservation_Room WHERE RoomCode = @RoomCode",
+                conn
+            );
+
+            cmd.Parameters.AddWithValue("@RoomCode", roomCode);
+            int rowsAffected = cmd.ExecuteNonQuery();
+
+            return rowsAffected > 0;
+        }
     }
 }

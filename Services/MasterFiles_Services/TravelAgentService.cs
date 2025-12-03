@@ -120,5 +120,20 @@ namespace OIT_Reservation.Services
             bool exists = existsParam.Value != DBNull.Value && (bool)existsParam.Value;
             return exists;
         }
+        
+        public bool Delete(long TravelAgentID)
+        {
+            using var conn = new SqlConnection(_conn);
+            conn.Open();
+            using var cmd = new SqlCommand(
+                "DELETE FROM Reservation_TravelAgent WHERE TravelAgentID = @TravelAgentID",
+                conn
+                );
+
+            cmd.Parameters.AddWithValue("@TravelAgentID", TravelAgentID);
+            int rowsAffected = cmd.ExecuteNonQuery();
+
+            return rowsAffected > 0;
+        }
     }
 }

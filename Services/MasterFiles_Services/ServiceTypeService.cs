@@ -175,6 +175,23 @@ namespace OIT_Reservation.Services
                 throw new ApplicationException($"Database error: {ex.Message}");
             }
         }
+        public bool Delete(long ServiceTypeID)
+        {
+            using var conn = new SqlConnection(_conn);
+            conn.Open();
+            using var cmd = new SqlCommand(
+            "DELETE FROM Reservation_ServiceType WHERE ServiceTypeID = @ServiceTypeID",
+            conn
+                );
+
+            cmd.Parameters.AddWithValue("@ServiceTypeID", ServiceTypeID);
+            int rowsAffected = cmd.ExecuteNonQuery();
+
+            return rowsAffected > 0;
+
+
+
+        }
 
     }
 }

@@ -123,5 +123,20 @@ namespace OIT_Reservation.Services
             bool exists = existsParam.Value != DBNull.Value && (bool)existsParam.Value;
             return exists;
         }
+
+        public bool Delete(long SetupStyleTypeID)
+        {
+            using var conn = new SqlConnection(_conn);
+            conn.Open();
+            using var cmd = new SqlCommand(
+                "DELETE FROM Reservation_SetupStyleType WHERE SetupStyleTypeID = @SetupStyleTypeID",
+                conn
+                );
+
+            cmd.Parameters.AddWithValue("@SetupStyleTypeID", SetupStyleTypeID);
+            int rowsAffected = cmd.ExecuteNonQuery();
+
+            return rowsAffected > 0;
+        }
     }
 }

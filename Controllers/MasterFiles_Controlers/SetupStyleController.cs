@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Linq.Expressions;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using OIT_Reservation.Models;
 using OIT_Reservation.Services;
@@ -89,6 +90,29 @@ namespace OIT_Reservation.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
+        [HttpDelete("Delete/{SetupStyleTypeID}")]
+        public IActionResult Delete(long SetupStyleTypeID)
+        {
+            try
+            {
+                bool delete = _service.Delete(SetupStyleTypeID);
+                if (delete)
+                    return Ok("Setup style type delete successfully.");
+                else
+                    return NotFound("Setup style type not found.");
+
+
+            }catch (SqlException ex)
+            {
+                return BadRequest($"SQL Error: server error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal Server error: {ex.Message}");
+            }
+        }
+
     }
 
 }

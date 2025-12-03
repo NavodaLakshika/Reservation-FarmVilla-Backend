@@ -89,5 +89,27 @@ namespace OIT_Reservation.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
+        [HttpDelete("Delete/{eventTypeId}")]
+        public IActionResult Delete(string eventTypeId)
+        {
+            try
+            {
+                bool delete = _service.Delete(eventTypeId);
+                if (delete)
+                    return Ok("Event type delete successfully.");
+                else
+                    return NotFound("Event type not found.");
+            }
+            catch (SqlException ex)
+            {
+                return BadRequest($"SQL Error: {ex.Message}");
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
     }
 }

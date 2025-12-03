@@ -126,5 +126,20 @@ namespace OIT_Reservation.Services
         {
             throw new NotImplementedException();
         }
+        
+        public bool Delete(string eventTypeId)
+        {
+            using var conn = new SqlConnection(_conn);
+            conn.Open();
+
+            using var cmd = new SqlCommand(
+                "DELETE FROM Reservation_EventType WHERE EventTypeId = @EventTypeId",
+                conn
+                );
+            cmd.Parameters.AddWithValue("@EventTypeId", eventTypeId);
+            int rowsAffected = cmd.ExecuteNonQuery();
+
+            return rowsAffected > 0;
+        }
     }
 }

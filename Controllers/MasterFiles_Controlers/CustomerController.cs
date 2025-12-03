@@ -1,5 +1,7 @@
  using Microsoft.AspNetCore.Mvc;
- using OIT_Reservation.Services;
+using Microsoft.Data.SqlClient;
+using OIT_Reservation.Services;
+using OIT_Reservation.Models;
 
 namespace OIT_Reservation.Controllers
  {
@@ -165,6 +167,28 @@ namespace OIT_Reservation.Controllers
             {
                 _logger.LogError(ex, "Error updating customer.");
                 return StatusCode(500, "An error occurred while updating the customer: " + ex.Message);
+            }
+        }
+
+        [HttpDelete("delete/{customerCode}")]
+        public IActionResult Delete(string customerCode)
+        {
+            try
+            {
+                bool deleted = _customerService.Delete(customerCode); 
+
+                if (deleted)
+                    return Ok("Customer deleted successfully.");
+                else
+                    return NotFound("Customer not found.");
+            }
+            catch (SqlException ex)
+            {
+                return BadRequest($"SQL Error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal Server Error: {ex.Message}");
             }
         }
     }

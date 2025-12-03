@@ -227,6 +227,21 @@ namespace OIT_Reservation.Services
             }
         }
 
+        public bool Delete(string customerCode)
+        {
+            using var conn = new SqlConnection(_conn);
+            conn.Open();
+            using var cmd = new SqlCommand(
+                "DELETE FROM Reservation_Customer WHERE customerCode = @customerCode",
+                conn
+                );
+
+            cmd.Parameters.AddWithValue("@customerCode", customerCode);
+            int rowsAffected = cmd.ExecuteNonQuery();
+
+            return rowsAffected > 0;
+        }
+
 
     }
 }

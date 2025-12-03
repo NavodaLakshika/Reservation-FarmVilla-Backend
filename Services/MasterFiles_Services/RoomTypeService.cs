@@ -130,6 +130,22 @@ namespace OIT_Reservation.Services
             bool exists = existsParam.Value != DBNull.Value && (bool)existsParam.Value;
             return exists;
         }
+
+        public bool Delete(string RoomTypeCode)
+        {
+            using var conn = new SqlConnection(_conn);
+            conn.Open();
+
+            using var cmd = new SqlCommand(
+                "DELETE FROM Reservation_RoomType WHERE RoomTypeCode = @RoomTypeCode",
+                conn
+            );
+
+            cmd.Parameters.AddWithValue("@RoomTypeCode",RoomTypeCode);
+            int rowsAffected = cmd.ExecuteNonQuery();
+
+            return rowsAffected > 0;
+        }
     }
 }
 

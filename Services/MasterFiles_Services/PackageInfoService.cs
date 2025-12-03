@@ -194,5 +194,23 @@ namespace OIT_Reservation.Services
                 throw new ApplicationException($"Database error: {ex.Message}");
             }
         }
+
+        public bool Delete(long PackageID)
+        {
+            using var conn = new SqlConnection(_conn);
+            conn.Open();
+            using var cmd = new SqlCommand(
+            "DELETE FROM Reservation_Package WHERE PackageID = @PackageID",
+            conn
+                );
+
+            cmd.Parameters.AddWithValue("@PackageID", PackageID);
+            int rowsAffected = cmd.ExecuteNonQuery();
+
+            return rowsAffected > 0;
+
+
+
+        }
     }
 }
