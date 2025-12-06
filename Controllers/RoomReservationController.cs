@@ -94,6 +94,8 @@ public class RoomReservationController : ControllerBase
 
     }
 
+   
+
     [HttpGet("byStatus/{statusId}")]
     public async Task<IActionResult> GetByStatus(int statusId, [FromQuery] string? fromDate = null, [FromQuery] string? toDate = null)
     {
@@ -106,6 +108,21 @@ public class RoomReservationController : ControllerBase
         {
             _logger.LogError(ex, "Error fetching reservations by status {statusId}", statusId);
             return StatusCode(500, "An error occurred: " + ex.Message);
+        }
+    }
+
+    [HttpGet("finalizedInvoices")]
+    public async Task<IActionResult> GetFinalizedInvoices([FromQuery] string? fromDate = null, [FromQuery] string? toDate = null)
+    {
+        try
+        {
+            var invoices = await _reservationService.GetFinalizedInvoicesAsync(fromDate, toDate);
+            return Ok(invoices);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error fetching finalized invoices");
+            return StatusCode(500, "An error occurred while fetching invoices: " + ex.Message);
         }
     }
 

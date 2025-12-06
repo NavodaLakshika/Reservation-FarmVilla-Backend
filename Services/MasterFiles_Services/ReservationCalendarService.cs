@@ -1,10 +1,10 @@
-using System.Data;
 using Dapper;
+using System.Data;
 using Microsoft.Data.SqlClient;
 
 public interface IReservationCalendarService
 {
-    Task<List<ReservationCalendarDto>> GetReservationCalendarDataAsync(DateTime start, DateTime end, int calendarType);
+    Task<List<ReservationCalendarDto>> GetReservationCalendarDataAsync(DateTime start, DateTime end, int calendarType, int? statusId = null);
 }
 
 public class ReservationCalendarService : IReservationCalendarService
@@ -16,41 +16,21 @@ public class ReservationCalendarService : IReservationCalendarService
         _connectionString = configuration.GetConnectionString("DefaultConnection");
     }
 
-    public async Task<List<ReservationCalendarDto>> GetReservationCalendarDataAsync(DateTime start, DateTime end, int calendarType)
+    public async Task<List<ReservationCalendarDto>> GetReservationCalendarDataAsync(DateTime start, DateTime end, int calendarType, int? statusId = null)
     {
         using var connection = new SqlConnection(_connectionString);
 
-        var result = await connection.QueryAsync<dynamic>(
+        var parameters = new DynamicParameters();
+        parameters.Add("@StartDate", start);
+        parameters.Add("@EndDate", end);
+        parameters.Add("@CalendarType", calendarType);
+        parameters.Add("@StatusId", statusId);
+
+        var result = await connection.QueryAsync<ReservationCalendarDto>(
             "sp_GetReservationCalendarData",
-            new { StartDateTime = start, EndDateTime = end, CalendarType = calendarType },
+            parameters,
             commandType: CommandType.StoredProcedure);
 
-        var list = new List<ReservationCalendarDto>();
-
-        foreach (var row in result)
-        {
-            var dict = new Dictionary<string, string>();
-            var obj = (IDictionary<string, object>)row;
-
-            var dto = new ReservationCalendarDto
-            {
-                RoomId = Convert.ToInt32(obj["RoomId"]),
-                RoomName = obj["RoomName"]?.ToString(),
-                RoomSize = obj["RoomSize"]?.ToString()
-            };
-
-            foreach (var col in obj.Keys)
-            {
-                if (col != "RoomId" && col != "RoomName" && col != "RoomSize")
-                {
-                    dict[col] = obj[col]?.ToString();
-                }
-            }
-
-            dto.CalendarDetails = dict;
-            list.Add(dto);
-        }
-
-        return list;
+        return result.ToList();
     }
 }

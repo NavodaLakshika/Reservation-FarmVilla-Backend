@@ -14,6 +14,8 @@ public interface IRoomReservationService
     Task<List<string>> GetReceiptNumbersAsync(string reservationNo);
 
 
+    Task<IEnumerable<InvoiceDto>> GetFinalizedInvoicesAsync(string? fromDate = null, string? toDate = null);
+
 
 
 }
@@ -753,4 +755,77 @@ public class RoomReservationService : IRoomReservationService
 
     return reservations.Values.ToList();
 }
+
+
+    public async Task<IEnumerable<InvoiceDto>> GetFinalizedInvoicesAsync(string? fromDate = null, string? toDate = null)
+    {
+        using var conn = new SqlConnection(_config.GetConnectionString("DefaultConnection"));
+
+        // This query is optimized to get proper invoice data without duplication
+        var sql = @"
+        SELECT 
+            h.InvoiceNo,
+            h.invoicedate AS InvoiceDate,
+            h.ReservationNo,
+            h.CustomerCode,
+            c.Name AS CustomerName,
+            h.GrossAmount AS TotalAmount,
+            h.PaidAmount,
+            h.DueAmount,
+            h.ReservationStatus AS Status,
+            h.crUser AS CreatedBy
+        FROM Reservation_Hed h
+        LEFT JOIN Reservation_Customer c ON h.CustomerCode = c.CustomerCode
+        WHERE h.statusid = 6 
+          AND h.InvoiceNo IS NOT NULL 
+          AND h.InvoiceNo != ''";
+
+        if (!string.IsNullOrEmpty(fromDate))
+            sql += " AND CONVERT(date, h.invoicedate) >= @fromDate";
+        if (!string.IsNullOrEmpty(toDate))
+            sql += " AND CONVERT(date, h.invoicedate) <= @toDate";
+
+        sql += " ORDER BY h.invoicedate DESC, h.InvoiceNo";
+
+        using var cmd = new SqlCommand(sql, conn);
+
+        if (!string.IsNullOrEmpty(fromDate))
+            cmd.Parameters.AddWithValue("@fromDate", DateTime.Parse(fromDate));
+        if (!string.IsNullOrEmpty(toDate))
+            cmd.Parameters.AddWithValue("@toDate", DateTime.Parse(toDate));
+
+        var invoices = new List<InvoiceDto>();
+
+        try
+        {
+            await conn.OpenAsync();
+            using var rdr = await cmd.ExecuteReaderAsync();
+
+            while (await rdr.ReadAsync())
+            {
+                var invoice = new InvoiceDto
+                {
+                    InvoiceNo = rdr["InvoiceNo"] as string ?? "",
+                    InvoiceDate = rdr["InvoiceDate"] is DBNull ? DateTime.MinValue : (DateTime)rdr["InvoiceDate"],
+                    ReservationNo = rdr["ReservationNo"] as string ?? "",
+                    CustomerCode = rdr["CustomerCode"] as string ?? "",
+                    CustomerName = rdr["CustomerName"] as string ?? "N/A",
+                    TotalAmount = rdr["TotalAmount"] is DBNull ? 0m : Convert.ToDecimal(rdr["TotalAmount"]),
+                    PaidAmount = rdr["PaidAmount"] is DBNull ? 0m : Convert.ToDecimal(rdr["PaidAmount"]),
+                    DueAmount = rdr["DueAmount"] is DBNull ? 0m : Convert.ToDecimal(rdr["DueAmount"]),
+                    Status = rdr["Status"] as string ?? "Finalized",
+                    CreatedBy = rdr["CreatedBy"] as string ?? "System"
+                };
+
+                invoices.Add(invoice);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error fetching invoices: {ex.Message}");
+            throw;
+        }
+
+        return invoices;
+    }
 }

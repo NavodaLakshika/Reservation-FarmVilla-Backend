@@ -14,9 +14,10 @@ public class ReservationCalendarController : ControllerBase
     [HttpGet("calendar")]
     public async Task<IActionResult> GetReservationCalendar([FromQuery] DateTime startDate,
                                                             [FromQuery] DateTime endDate,
-                                                            [FromQuery] int calendarType)
+                                                            [FromQuery] int calendarType = 1,
+                                                            [FromQuery] int? statusId = null)
     {
-        var data = await _calendarService.GetReservationCalendarDataAsync(startDate, endDate, calendarType);
+        var data = await _calendarService.GetReservationCalendarDataAsync(startDate, endDate, calendarType, statusId);
         return Ok(data);
     }
 }
